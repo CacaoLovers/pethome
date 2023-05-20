@@ -1,0 +1,24 @@
+GET http://localhost:8080/missing/list
+
+
+###
+
+POST http://localhost:8080/missing
+Content-Type: application/json
+
+
+{
+  "posX": 10.3,
+  "posY": 10.4,
+  "description": "пропала собачка",
+  "name": "boris",
+  "district": {
+    "name": "Московский район",
+    "city": "Казань"
+  },
+  "owner": {
+    "id": "7e243c23-7454-42be-b69f-3e720051afad"
+  },
+  "type": "LOST",
+  "status": "ACTIVE"
+}
