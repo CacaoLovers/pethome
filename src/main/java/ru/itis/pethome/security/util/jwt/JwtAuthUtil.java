@@ -19,8 +19,8 @@ import java.util.Map;
 @Component
 public class JwtAuthUtil {
 
-    private final static long ACCESS_TOKEN_EXPIRE = 1000*30;
-    private final static long REFRESH_TOKEN_EXPIRE = 1000*60;
+    private final static long ACCESS_TOKEN_EXPIRE = 1000*60*15;
+    private final static long REFRESH_TOKEN_EXPIRE = 1000*60*60*24;
 
 
     public Map<String, String> generateToken(String subject, String authority, String issue){
